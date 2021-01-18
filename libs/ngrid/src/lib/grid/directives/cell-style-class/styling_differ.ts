@@ -129,13 +129,13 @@ export class StylingDiffer<T> {
 
       // case 2: [input]="{key:value}"
       case StylingDifferValueTypes.Map:
-        const map: {[key: string]: any} = this._lastSetValue as{[key: string]: any};
-        const keys = Object.keys(map);
+        const mapValue: {[key: string]: any} = this._lastSetValue as{[key: string]: any};
+        const keys = Object.keys(mapValue);
         if (!valueHasChanged) {
           if (this.value) {
             // we know that the classExp value exists and that it is
             // a map (otherwise an identity change would have occurred)
-            valueHasChanged = mapHasChanged(keys, this.value as{[key: string]: any}, map);
+            valueHasChanged = mapHasChanged(keys, this.value as{[key: string]: any}, mapValue);
           } else {
             valueHasChanged = true;
           }
@@ -143,7 +143,7 @@ export class StylingDiffer<T> {
 
         if (valueHasChanged) {
           finalValue =
-              bulidMapFromValues(this._name, trimValues, parseOutUnits, allowSubKeys, map, keys);
+              bulidMapFromValues(this._name, trimValues, parseOutUnits, allowSubKeys, mapValue, keys);
         }
         break;
 
