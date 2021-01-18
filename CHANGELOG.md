@@ -1,3 +1,12 @@
+## 2.3.1-solunio.1 (2021-01-18)
+
+
+### Bug Fixes
+
+* **StylingDiffer:** fix shadowed name, caused by a webpack issue https://github.com/webpack/webpack/issues/11283 ([2c0345f](https://github.com/skrtheboss/ngrid/commit/2c0345fbb627d145b7efe7fc910a7658746c85e9))
+
+
+
 ## 2.3.1 (2020-12-03)
 
 
