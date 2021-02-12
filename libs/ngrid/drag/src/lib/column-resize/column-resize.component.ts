@@ -240,6 +240,10 @@ export class PblNgridDragResizeComponent implements AfterViewInit, OnDestroy {
     return this._dragDropRegistry.isDragging(this);
   }
 
+  isDragging() {
+    return this._isDragging();
+  }
+
   private _getRootElement(): HTMLElement {
     return this.element.nativeElement;
   }
