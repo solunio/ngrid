@@ -1,3 +1,11 @@
+## 2.3.1-solunio.2 (2021-02-12)
+
+
+### Bug Fixes
+
+* add support for angular v11
+
+
 ## 2.3.1-solunio.1 (2021-01-18)
 
 
